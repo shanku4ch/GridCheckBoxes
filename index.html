@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TimeLine Trial</title>
+    <style>
+        #container {
+            width: 1000px;
+            height: auto;
+            overflow-x: scroll;
+        }
+
+        #shankuPlugin {
+            width: 1000px;
+            height: auto;
+            overflow-x: scroll;
+        }
+    </style>
+
+    <script src="jquery-2.1.4.min.js"></script>
+  <!--  <script src="jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>-->
+    <script src="jquery.hscroll-min.js"></script>
+    <link href="timeline.css" rel="stylesheet" />
+    <link href="GridCheckBoxes.css" rel="stylesheet" />
+    <script src="Jquery-Timeline-0.1.js"></script>
+    <script src="jquery-gridcheckboxes.js"></script>
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            //$("#shankuPlugin").hScroll(100);
+            //$("#shankuPlugin").Timeline({
+            //    showDateline: false,
+            //    MonthNotation: 'Full',
+            //    data: {
+            //        startDate: new Date(2013, 5, 1),
+            //        endDate: new Date(2016,7,7),
+            //        Periods: [
+            //            {
+            //                ID: "1",
+            //                StartDate: new Date(2014, 1, 14),
+            //                EndDate: new Date(2015, 0, 21),
+            //                Description: "NEESP",
+            //            },
+            //            {
+            //                ID: "2",
+            //                StartDate: new Date(2015, 10, 14),
+            //                EndDate: new Date(2016, 1, 21),
+            //                Description: "Sample 1",
+            //            },
+            //            {
+            //                ID: "3",
+            //                StartDate: new Date(2013, 11, 23),
+            //                EndDate: new Date(2015, 2, 21),
+            //                Description: "Sample 2",
+            //            },
+            //            {
+            //                ID: "4",
+            //                StartDate: new Date(2013, 11, 23),
+            //                EndDate: new Date(2014, 2, 21),
+            //                Description: "Sample 3",
+            //            }
+            //        ]
+
+            //    }
+
+            //});
+
+            $("#gridCheckBoxes").GridCheckBoxes({
+                title: 'BPs',
+                data: {
+                    "rowdata": ["shanku", "MEC_EE_NotAff_ME_NC", "MEC_EE_NotAff_NC", "MEC_ES_NotAff_ME_NC", "MEC_ES_NotAff_NC", "MEC_Fam_NotAff_ME_NC", "MEC_Fam_NotAff_NC", "MEC_HH_NotAff_ME_NC", "MEC_HH_NotAff_NC", "MV_EE_Aff_ME_NC", "MV_EE_Aff_NC", "MV_EE_NotAff_ME_NC", "MV_EE_NotAff_NC", "MV_ES_Aff_ME_NC", "MV_ES_Aff_NC", "MV_ES_NotAff_ME_NC", "MV_ES_NotAff_NC", "MV_Fam_Aff_ME_NC", "MV_Fam_Aff_NC", "MV_Fam_NotAff_ME_NC", "MV_Fam_NotAff_NC", "MV_HH_Aff_ME_NC", "MV_HH_Aff_NC", "MV_HH_NotAff_ME_NC", "MV_HH_NotAff_NC"],
+                    "columndata": ["shashank", "MV_Fam_Aff_ME_NC", "shanku1", "shanku", "MEC_Fam_NotAff_NC", "MEC_Fam_NotAff_ME_NC", "MEC_EE_NotAff_ME_NC", "MEC_HH_NotAff_NC", "MEC_ES_NotAff_NC", "MEC_ES_NotAff_ME_NC", "MEC_EE_NotAff_NC", "MV_EE_Aff_NC", "MV_EE_Aff_ME_NC", "MEC_HH_NotAff_ME_NC", "MV_EE_NotAff_ME_NC", "MV_EE_NotAff_NC", "MV_ES_Aff_ME_NC", "MV_ES_NotAff_NC", "MV_Fam_NotAff_NC", "MV_HH_Aff_ME_NC", "MV_HH_Aff_NC", "MV_HH_NotAff_ME_NC", "MV_HH_NotAff_NC", "NoPlan_NC", "MV_Fam_Aff_NC", "MV_Fam_NotAff_ME_NC", "MV_ES_Aff_NC", "MV_ES_NotAff_ME_NC"],
+                    "selected": [{ "rowval": "MEC_EE_NotAff_ME_NC", "colval": "MEC_EE_NotAff_ME_NC" }, { "rowval": "MV_EE_Aff_NC", "colval": "MV_EE_Aff_NC" }, { "rowval": "MV_EE_NotAff_ME_NC", "colval": "MV_EE_NotAff_ME_NC" }, { "rowval": "MV_EE_NotAff_NC", "colval": "MV_EE_NotAff_NC" }, { "rowval": "MV_ES_Aff_ME_NC", "colval": "MV_ES_Aff_ME_NC" }, { "rowval": "MV_ES_Aff_NC", "colval": "MV_ES_Aff_NC" }, { "rowval": "MV_ES_NotAff_ME_NC", "colval": "MV_ES_NotAff_ME_NC" }, { "rowval": "MV_ES_NotAff_NC", "colval": "MV_ES_NotAff_NC" }, { "rowval": "MV_Fam_Aff_ME_NC", "colval": "MV_Fam_Aff_ME_NC" }, { "rowval": "MV_Fam_Aff_NC", "colval": "MV_Fam_Aff_NC" }, { "rowval": "MV_Fam_NotAff_ME_NC", "colval": "MV_Fam_NotAff_ME_NC" }, { "rowval": "MEC_EE_NotAff_NC", "colval": "MEC_EE_NotAff_NC" }, { "rowval": "MV_Fam_NotAff_NC", "colval": "MV_Fam_NotAff_NC" }, { "rowval": "MV_HH_Aff_ME_NC", "colval": "MV_HH_Aff_ME_NC" }, { "rowval": "MV_HH_Aff_NC", "colval": "MV_HH_Aff_NC" }, { "rowval": "MV_HH_NotAff_ME_NC", "colval": "MV_HH_NotAff_ME_NC" }, { "rowval": "MV_HH_NotAff_NC", "colval": "MV_HH_NotAff_NC" }, { "rowval": "MEC_ES_NotAff_ME_NC", "colval": "MEC_ES_NotAff_ME_NC" }, { "rowval": "MEC_ES_NotAff_NC", "colval": "MEC_ES_NotAff_NC" }, { "rowval": "MEC_Fam_NotAff_ME_NC", "colval": "MEC_Fam_NotAff_ME_NC" }, { "rowval": "MEC_Fam_NotAff_NC", "colval": "MEC_Fam_NotAff_NC" }, { "rowval": "MEC_HH_NotAff_ME_NC", "colval": "MEC_HH_NotAff_ME_NC" }, { "rowval": "MEC_HH_NotAff_NC", "colval": "MEC_HH_NotAff_NC" }, { "rowval": "MV_EE_Aff_ME_NC", "colval": "MV_EE_Aff_ME_NC" }]
+                },
+                //data: {
+                //    columndata: ['BenefitPeriod1', 'BenefitPeriod2', 'BenefitPeriod3', 'BenefitPeriod4', 'BenefitPeriod5', 'BenefitPeriod6', 'BenefitPeriod7', 'BenefitPeriod8', 'BenefitPeriod9', 'BenefitPeriod10', ],
+                //    rowdata: ['HP Eligibility Code 1', 'HP Eligibility Code 2', 'HP Eligibility Code 3', 'HP Eligibility Code 4', 'HP Eligibility Code 5', 'HP Eligibility Code 6', ],
+                //    selected: [{ rowval: 'HP Eligibility Code 1', colval: 'BenefitPeriod1' }, { rowval: 'HP Eligibility Code 3', colval: 'BenefitPeriod1' }, { rowval: 'HP Eligibility Code 4', colval: 'BenefitPeriod2' }]
+                //},
+                onchange: function () { alert($("#gridCheckBoxes").val()); },
+                url : ''
+            });
+
+            //$(".row2.column1").prop('checked', true);
+        });
+
+    </script>
+</head>
+<body>
+    <!--<div id="container">
+    </div>-->
+    
+    <!--<div id="shankuPlugin"></div>-->
+
+    <div style="top:100px; left:100px;position:absolute" id="gridCheckBoxes">
+
+    </div>
+</body>
+</html>
